@@ -52,6 +52,14 @@ echo "查看repositories.conf信息——————"
 cat repositories.conf
 # 定义所需安装的包列表 下列插件你都可以自行删减
 PACKAGES=""
+# 核心组件及工具 (Core & Tools)
+PACKAGES="$PACKAGES curl"
+PACKAGES="$PACKAGES openssh-sftp-server"
+
+# 主题 (Themes)
+PACKAGES="$PACKAGES luci-theme-argon"
+
+# 应用程序 (Apps)
 PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-app-attendedsysupgrade"
 PACKAGES="$PACKAGES luci-app-diskman"
@@ -63,6 +71,8 @@ PACKAGES="$PACKAGES luci-app-sqm"
 PACKAGES="$PACKAGES luci-app-statistics"
 PACKAGES="$PACKAGES luci-app-upnp"
 PACKAGES="$PACKAGES luci-app-vlmcsd"
+
+# 中文语言包 (i18n)
 PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-attendedsysupgrade-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-base-zh-cn"
@@ -71,8 +81,10 @@ PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-netdata-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-opkg-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-sqm-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-upnp-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-vlmcsd-zh-cn"
 # 判断是否需要编译 Docker 插件
