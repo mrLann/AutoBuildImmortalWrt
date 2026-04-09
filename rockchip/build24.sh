@@ -54,6 +54,7 @@ cat repositories.conf
 PACKAGES=""
 # 核心组件及工具 (Core & Tools)
 PACKAGES="$PACKAGES curl"
+PACKAGES="$PACKAGES wget-ssl"
 PACKAGES="$PACKAGES openssh-sftp-server"
 
 # 主题 (Themes)
@@ -65,7 +66,6 @@ PACKAGES="$PACKAGES luci-app-attendedsysupgrade"
 PACKAGES="$PACKAGES luci-app-diskman"
 PACKAGES="$PACKAGES luci-app-firewall"
 PACKAGES="$PACKAGES luci-app-homeproxy"
-PACKAGES="$PACKAGES luci-app-netdata"
 PACKAGES="$PACKAGES luci-app-sqm"
 PACKAGES="$PACKAGES luci-app-statistics"
 PACKAGES="$PACKAGES luci-app-upnp"
@@ -77,7 +77,6 @@ PACKAGES="$PACKAGES luci-i18n-attendedsysupgrade-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
-PACKAGES="$PACKAGES luci-i18n-netdata-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-sqm-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn"
