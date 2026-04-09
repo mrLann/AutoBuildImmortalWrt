@@ -55,6 +55,7 @@ PACKAGES=""
 # 核心组件及工具 (Core & Tools)
 PACKAGES="$PACKAGES curl"
 PACKAGES="$PACKAGES wget-ssl"
+PACKAGES="$PACKAGES lm-sensors"
 PACKAGES="$PACKAGES openssh-sftp-server"
 
 # 主题 (Themes)
